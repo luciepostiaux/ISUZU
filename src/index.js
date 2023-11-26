@@ -1,6 +1,10 @@
-import './style.css';
+const collapse = document.getElementById("collapse-readmore");
 
-const myCollapsible = document.getElementById('collapseExample')
-myCollapsible.addEventListener('hidden.bs.collapse', event => {
-  
-})
+const collapseButton = document.getElementById("collapse-button");
+collapse.addEventListener("hide.bs.collapse", (event) => {
+    collapseButton.textContent = "Read more";
+});
+
+collapse.addEventListener("show.bs.collapse", (event) => {
+    collapseButton.textContent = "Read less";
+});

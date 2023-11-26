@@ -1,9 +1,84 @@
 body {
   padding-bottom: 10vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  letter-spacing: 1.26pt;
+  color: #333333;
+  font-weight: 400;
 }
+
 #startseite video {
-    height: 90vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url("pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.svg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.m-h1-white {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 34pt;
+  letter-spacing: 3.4pt;
+  color: #ffffff;
+}
+
+.m-h2-white {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 25pt;
+  letter-spacing: 2.5pt;
+  color: #ffffff;
+}
+
+.m-h2-grey {
+
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-size: 27pt;
+  letter-spacing: 2.7pt;
+  color: #333333;
+}
+
+.m-b-headline{
+
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+  letter-spacing: 0.75pt;
+  color: #6D727B;
+}
+
+@media screen and (min-width: 768px) {
+  .svg-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(360deg);
+  
   }
+}
