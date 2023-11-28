@@ -13,33 +13,37 @@
     />
 
     <link rel="stylesheet" href="src/style.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- Section d'en-tête -->
     <header>
       <!-- Liens de navigation -->
-      <nav class="navbar bg-body-tertiary fixed-top">
+      <nav class="navbar fixed-top">
         <div class="container-fluid">
-          <div>
-            <a class="navbar-brand" href="#startseite">ISUZU</a>
-            <h6>AUTOHAUS MUSTERMANN, MUSTERSTARF</h6>
+          <div class="d-flex justify-content-between w-100">
+            <a class="navbar-brand" href="#startseite">
+              <img src="src/vectors/Logo-Isuzu-white.svg" />
+            </a>
+            <button
+              class="navbar-toggler d-block"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <img src="src/vectors/menu.svg" />
+            </button>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <h2 class="logo-subtitle">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -92,17 +96,30 @@
       </nav>
     </header>
 
+    <nav class="fixed-bottom row">
+      <a href="#" class="col probefahrt">
+        <img src="src/vectors/steering-2-fill.svg" /> Probefahrt</a
+      >
+      <a href="#" class="col kontakt">
+        <img src="src/vectors/phone-fill.svg" /> Kontakt
+      </a>
+    </nav>
+
     <!-- Section principale -->
     <main>
       <!-- Première section -->
-      <section id="startseite" class="position-relative">
+      <section id="startseite" class="">
         <div
-          class="position-absolute top start d-flex flex-column align-items-center justify-content-center h-100 w-100 text-light"
+          class="position-absolute d-flex flex-column align-items-center justify-content-center h-100 w-100 text-light gap-2"
         >
           <h1 class="m-h1-white">WILLKOMMEN BEI</h1>
           <h2 class="m-h2-white">AUTOHAUS MUSTERMANN</h2>
         </div>
-        <video>
+        <img
+          src="src/vectors/icon-scroll-normal.svg"
+          class="position-absolute"
+        />
+        <video class="object-fit-cover">
           <source
             src="src/videos/ISUZU-DMAX-key-visual-loop.mp4"
             type="video/mp4"
@@ -116,36 +133,42 @@
         <div class="row">
           <div class="col-12 col-md-4">
             <h3 class="m-b-headline">ÜBER UNS</h3>
-            <h2 class="m-h2-grey">AUTOHAUS WIENS, IHR ISUZU-HÄNDLER</h2>
+            <h2 class="m-h2-grey">
+              AUTOHAUS WIENS,<br />
+              IHR ISUZU-HÄNDLER
+            </h2>
           </div>
           <div class="col-12 col-md-8 d-block d-md-none">
-
             <p>
-              Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait.
-              Enis feugiat minisi adiam quis esse nonsequi diat. Verciduisi vullam
-              volute ver dolenismodit dolorer conse vullam tio a duis. Eum magnis
-              re. Amconsequis iriuscing, se, to iurem eum facillametum dit del odo.
-              El atueraestrud vullutat, uipsuscidunt lortin rat commod commod luptat
-              iusci…
+              Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
+              feugait. Enis feugiat minisi adiam quis esse nonsequi diat.
+              Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio
+              a duis. Eum magnis re. Amconsequis iriuscing, se, to iurem eum
+              facillametum dit del odo. El atueraestrud vullutat, uipsuscidunt
+              lortin rat commod commod luptat iusci…
             </p>
             <div class="collapse" id="collapse-readmore">
               <p>
                 Commy re del eui elesequisim nim amet lummy quip. Dionsenim,
                 sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
-                eummolortion consequi. Dolortin sustionsenim amconsequis iriustrud,
-                min il, tio lor. Eummolortion dolortie feuguer lummolessi mod
-                feuismo odo tem vullutat.
+                eummolortion consequi. Dolortin sustionsenim amconsequis
+                iriustrud, min il, tio lor. Eummolortion dolortie feuguer
+                lummolessi mod feuismo odo tem vullutat.
               </p>
-              <button type="button" class="btn btn-danger">Main CTA title</button>
-              <button type="button" class="btn btn-secondary">
-                Secondary Title
-              </button>
+              <div class="d-flex flex-column mb-2 row-gap-3">
+                <button type="button" class="btn p-2 btn-main">
+                  Main CTA title
+                </button>
+                <button type="button" class="btn p-2 btn-scd">
+                  Secondary CTA Title
+                </button>
+              </div>
             </div>
-    
+
             <p class="text-center">
               <button
                 id="collapse-button"
-                class="btn btn-primary"
+                class="btn btn-show"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapse-readmore"
@@ -154,81 +177,81 @@
               >
                 Read more
               </button>
-  
             </p>
           </div>
           <div class="col-12 col-md-8 d-none d-md-block">
-
             <p>
-              Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait.
-              Enis feugiat minisi adiam quis esse nonsequi diat. Verciduisi vullam
-              volute ver dolenismodit dolorer conse vullam tio a duis. Eum magnis
-              re. Amconsequis iriuscing, se, to iurem eum facillametum dit del odo.
-              El atueraestrud vullutat, uipsuscidunt lortin rat commod commod luptat
-              iusci…
+              Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
+              feugait. Enis feugiat minisi adiam quis esse nonsequi diat.
+              Verciduisi vullam volute ver dolenismodit dolorer conse vullam tio
+              a duis. Eum magnis re. Amconsequis iriuscing, se, to iurem eum
+              facillametum dit del odo. El atueraestrud vullutat, uipsuscidunt
+              lortin rat commod commod luptat iusci…
             </p>
-              <p>
-                Commy re del eui elesequisim nim amet lummy quip. Dionsenim,
-                sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
-                eummolortion consequi. Dolortin sustionsenim amconsequis iriustrud,
-                min il, tio lor. Eummolortion dolortie feuguer lummolessi mod
-                feuismo odo tem vullutat.
-              </p>
-              <button type="button" class="btn btn-danger">Main CTA title</button>
-              <button type="button" class="btn btn-secondary">
-                Secondary Title
-              </button>
+            <p>
+              Commy re del eui elesequisim nim amet lummy quip. Dionsenim,
+              sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
+              eummolortion consequi. Dolortin sustionsenim amconsequis
+              iriustrud, min il, tio lor. Eummolortion dolortie feuguer
+              lummolessi mod feuismo odo tem vullutat.
+            </p>
+            <button type="button" class="btn btn-main">Main CTA title</button>
+            <button type="button" class="btn btn-scd">
+              Secondary CTA Title
+            </button>
           </div>
-
         </div>
       </section>
 
       <!-- Troisième section -->
       <section id="dmax">
-        
         <div class="">
           <div class="row">
             <div class="col-12 col-md-7">
               <div class="image-container">
                 <img src="src/pictures/bloc-sep-1.svg" class="svg-overlay" />
                 <div class="text-overlay">
-                  <h5>ÜBER DEN D-MAX</h5>
+                  <h2 class="text-dmax">ÜBER DEN D-MAX</h2>
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <h2 class="m-h2-grey">Technik & Funktion</h2>
+              <div>
+                <h2 class="m-h2-grey-custom">Technik & Funktion</h2>
+              </div>
               <p>
-                Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer feugait.
-                Enis feugiat minisi adiam quis esse nonsequi diat. Verciduisi vullam
-                volute ver dolenismodit dolorer conse vullam tio a duis. Eum magnis
-                re.Amconsequis iriuscing, se, to iurem eum facillametum dit del odo.
-                El atueraestrud vullutat, uipsuscidunt lortin rat commod commod luptat
-                iusci <br />
+                Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
+                feugait. Enis feugiat minisi adiam quis esse nonsequi diat.
+                Verciduisi vullam volute ver dolenismodit dolorer conse vullam
+                tio a duis. Eum magnis re.Amconsequis iriuscing, se, to iurem
+                eum facillametum dit del odo. El atueraestrud vullutat,
+                uipsuscidunt lortin rat commod commod luptat iusci
+              </p>
+              <p>
                 Commy re del eui elesequisim nim amet lummy quip. Dionsenim,
                 sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
-                eummolortion consequi. Dolortin sustionsenim amconsequis iriustrud,
-                min il, tio lor. Eummolortion dolortie feuguer lummolessi mod feuismo
-                ddo tem vullutat.
+                eummolortion consequi. Dolortin sustionsenim amconsequis
+                iriustrud, min il, tio lor. Eummolortion dolortie feuguer
+                lummolessi mod feuismo ddo tem vullutat.
               </p>
-      
-              <button type="button" class="btn btn-danger">Main CTA title</button>
-
+              <div class="d-flex p-2">
+                <button type="button" class="d-block btn btn-main w-100">
+                  Main CTA title
+                </button>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
       <section id="dmax-modele">
-
         <h5>D-MAX MODELLE</h5>
         <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="d-flex gap-4 ">
+          <div class="d-flex gap-4">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="  rounded ratio ratio-1x1"
+              class="rounded ratio ratio-1x1"
               aria-label="Single cab"
             >
               <img
@@ -243,7 +266,7 @@
               data-bs-slide-to="1"
               aria-label="Space cab"
               aria-current="true"
-              class="active  rounded ratio ratio-1x1"
+              class="active rounded ratio ratio-1x1"
             >
               <img
                 src="src/pictures/dc.png"
@@ -256,7 +279,7 @@
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Double cab"
-              class=" rounded ratio ratio-1x1"
+              class="rounded ratio ratio-1x1"
             >
               <img
                 src="src/pictures/dc.png"
@@ -267,7 +290,6 @@
           </div>
 
           <div class="carousel-inner">
-
             <div class="carousel-item active">
               <h2>Single cab</h2>
 
@@ -303,7 +325,6 @@
                 class="d-block w-100"
                 alt="space cab"
               />
-              
 
               <p>
                 Dolutatueros lobor zzriusto non. Doloreetuer quamcommy minit,
@@ -325,7 +346,6 @@
               </div>
             </div>
             <div class="carousel-item">
-              
               <h2>Double cab</h2>
               <img
                 src="src/pictures/dc.png"

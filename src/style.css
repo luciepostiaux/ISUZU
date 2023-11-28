@@ -1,17 +1,86 @@
 body {
   padding-bottom: 10vh;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18pt;
-  letter-spacing: 1.26pt;
-  color: #333333;
-  font-weight: 400;
 }
 
+body p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #333333;
+  word-spacing: 0.3rem;
+}
+
+body header nav {
+  background-color: #333333bf;
+}
+body nav a img {
+  height: 2.3rem;
+  padding-right: 0.6rem;
+}
 #startseite video {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+#uberuns {
+  padding: 4rem 1.7rem 1rem 1.7rem;
+}
+
+#dmax p {
+  padding: 1rem 1.7rem 1rem 1.7rem;
+}
+
+.navbar > div {
+  padding: 0 1.8rem 0 1.8rem;
+}
+
+.navbar-brand > img {
+  height: 1.3rem;
+}
+
+.logo-subtitle {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  border-style: none;
+}
+.navbar-toggler > img {
+  height: 2rem;
+}
+
+#startseite > img {
+  right: 50%;
+  top: 83%;
+}
+#startseite > div {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.probefahrt {
+  color: #ffffff;
+  background-color: #e3000b;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.4rem 0 1.4rem 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.kontakt {
+  color: #ffffff;
+  background-color: #333333;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.4rem 0 1.4rem 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .image-container {
@@ -40,37 +109,78 @@ body {
 }
 
 .m-h1-white {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 700;
-  font-size: 34pt;
-  letter-spacing: 3.4pt;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
   color: #ffffff;
 }
 
 .m-h2-white {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 700;
-  font-size: 25pt;
-  letter-spacing: 2.5pt;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
   color: #ffffff;
 }
 
-.m-h2-grey {
+.text-dmax {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+}
 
-  font-family: 'Kanit', sans-serif;
+.btn-show {
+  color: #e3000b;
+  font-family: "Kanit", sans-serif;
   font-weight: 600;
-  font-size: 27pt;
-  letter-spacing: 2.7pt;
+  font-size: 1.1rem;
+}
+
+.btn-main {
+  border-radius: 1.3rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  background-color: #e3000b;
+  color: #ffffff;
+}
+.btn-scd {
+  border-radius: 1.3rem;
+  border: 0.2rem solid #333333;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  background-color: #ffffff;
   color: #333333;
 }
 
-.m-b-headline{
+.m-h2-grey {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #333333;
+  text-transform: uppercase;
+}
 
-  font-family: 'Kanit', sans-serif;
+.m-h2-grey-custom {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2.6rem;
+  word-wrap: break-word;
+}
+
+.m-b-headline {
+  font-family: "Kanit", sans-serif;
   font-weight: 500;
-  font-size: 15pt;
-  letter-spacing: 0.75pt;
-  color: #6D727B;
+  font-size: 1rem;
+  color: #6d727b;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,6 +189,5 @@ body {
     top: 0;
     right: 0;
     transform: rotate(360deg);
-  
   }
 }
