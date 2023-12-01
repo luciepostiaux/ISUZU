@@ -4,9 +4,10 @@ body {
 
 body p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
   color: #333333;
   word-spacing: 0.3rem;
+
+  font-size: 1.1rem;
 }
 
 body header nav {
@@ -21,22 +22,47 @@ body nav a img {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  cursor: pointer;
 }
 
-#uberuns {
-  padding: 4rem 1.7rem 1rem 1.7rem;
+#uberuns,
+#dmax-modele,
+#contact {
+  padding: 4rem 2.5rem 1rem 2.5rem;
 }
 
 #dmax p {
-  padding: 1rem 1.7rem 1rem 1.7rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  font-weight: 600;
+}
+#dmax button {
+  margin: 1rem 2.5rem 1rem 2.5rem;
 }
 
+#contact h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.nseries h3 {
+  padding: 2.5rem 0 0.7rem 0;
+}
+.nseries h2 {
+  padding: 0rem 0 1rem 0;
+}
 .navbar > div {
   padding: 0 1.8rem 0 1.8rem;
 }
 
 .navbar-brand > img {
   height: 1.3rem;
+}
+.chevron-left,
+.chevron-right {
+  height: 2rem;
+}
+.chevron-left {
+  size: 1rem;
+  transform: rotate(180deg);
 }
 
 .logo-subtitle {
@@ -45,12 +71,65 @@ body nav a img {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+.nseries-text {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  word-spacing: 0.3rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
 
+#contact h4 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 1.5rem 0 1rem 0;
+}
+#contact h5 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #333333;
+  padding: 0.8rem 0 0.8rem 0;
+}
+#contact h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333333;
+  padding: 0.5rem 0 0.3rem 0;
+}
+.text-contact p {
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  word-spacing: 0.3rem;
+  font-weight: 400;
+}
 .navbar-toggler {
   border-style: none;
 }
 .navbar-toggler > img {
   height: 2rem;
+}
+.nseries {
+  padding: 1rem 4rem 1rem 4rem;
+}
+.footer {
+  padding: 1rem 1rem 1rem 1rem;
+}
+.footer a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem 0 1rem 0;
+  color: #333333;
+  text-transform: uppercase;
+}
+.footer img {
+  height: 1.8rem;
 }
 
 #startseite > img {
@@ -83,7 +162,7 @@ body nav a img {
   font-size: 1.2rem;
 }
 
-.image-container {
+.image-container-uber {
   position: relative;
   width: 100%;
   height: 50vh;
@@ -92,7 +171,15 @@ body nav a img {
   background-size: cover;
   overflow: hidden;
 }
-
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url("pictures/04-home-bild_text-N-Serie\ 3\,5t\ Koffer\ City\ Image.webp");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
 .text-overlay {
   position: absolute;
   top: 20%;
@@ -104,7 +191,7 @@ body nav a img {
 .svg-overlay {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   transform: rotate(90deg);
 }
 
@@ -132,6 +219,10 @@ body nav a img {
   color: #ffffff;
 }
 
+.group-function {
+  padding: 4rem 1rem 0 1rem;
+}
+
 .btn-show {
   color: #e3000b;
   font-family: "Kanit", sans-serif;
@@ -140,40 +231,82 @@ body nav a img {
 }
 
 .btn-main {
-  border-radius: 1.3rem;
+  border-radius: 2rem;
   font-family: "Kanit", sans-serif;
   font-weight: 300;
+  font-size: 1.2rem;
   background-color: #e3000b;
   color: #ffffff;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.btn-main:hover {
+  border-radius: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: #e3000b;
+  color: #ffffff;
+  opacity: 80%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.dmax-modele-titre {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333333;
+  text-transform: uppercase;
+  padding: 2.4rem 0 0.8rem 0;
 }
 .btn-scd {
-  border-radius: 1.3rem;
+  border-radius: 2rem;
   border: 0.2rem solid #333333;
   font-family: "Kanit", sans-serif;
   font-weight: 300;
+  font-size: 1.2rem;
   background-color: #ffffff;
   color: #333333;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.btn-scd:hover {
+  border-radius: 2rem;
+  border: 0.2rem solid #333333;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .m-h2-grey {
   font-family: "Kanit", sans-serif;
   font-weight: 600;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
   color: #333333;
   text-transform: uppercase;
+  word-break: break-all;
+}
+
+.m-h2-grey-dmax {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #333333;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 
 .m-h2-grey-custom {
   font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
   color: #333333;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 2.6rem;
-  word-wrap: break-word;
 }
 
 .m-b-headline {
