@@ -35,16 +35,17 @@
         </div>
         <h2 class="logo-subtitle">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
               AUTOHAUS MUSTERMANN, MUSTERSTARF
             </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-a">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#startseite">STARTSEITE</a>
+                <a class="nav-link" href="#startseite">STARTSEITE</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#uberuns">ÜBER UNS</a>
@@ -62,8 +63,10 @@
                 <a class="nav-link" href="#gallery">FOTOGALERIE</a>
               </li>
             </ul>
-            <button type="button" class="btn btn btn-danger">
-              Probefahrt
+            <button type="button" class="btn btn-main-menu btn-main ">
+
+              <a href="#" class="col d-flex align-items-center">
+                <img src="src/vectors/steering-2-fill.svg" /> Probefahrt</a>
             </button>
           </div>
         </div>
@@ -209,15 +212,15 @@
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="d-flex gap-2">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-            class="rounded ratio ratio-1x1" aria-label="Single cab">
+            class="rounded ratio ratio-1x1 btn-carousel" aria-label="Single cab">
             <img src="src/pictures/sc.png" class="object-fit-contain p-1" alt="single cab" />
           </button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Space cab"
-            aria-current="true" class="active rounded ratio ratio-1x1">
+            aria-current="true" class="active rounded ratio ratio-1x1 btn-carousel">
             <img src="src/pictures/ec.png" class="object-fit-contain p-1" alt="single cab" />
           </button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Double cab"
-            class="rounded ratio ratio-1x1">
+            class="rounded ratio ratio-1x1 btn-carousel">
             <img src="src/pictures/dc.png" class="object-fit-contain p-1" alt="single cab" />
           </button>
         </div>
@@ -354,7 +357,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.448395078646!2d7.1098161999999965!3d50.8228579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bedfba30c2f9ab%3A0x89ade042e4969310!2sLangbaurghstra%C3%9Fe%2012%2C%2053842%20Troisdorf%2C%20Allemagne!5e0!3m2!1sfr!2sbe!4v1701436149436!5m2!1sfr!2sbe"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <button type="button" class="btn btn-main">
+          <button type="button" class="btn btn-main mt-4">
             Google Maps immer anzeigen
           </button>
         </div>
@@ -383,39 +386,46 @@
     </section>
 
     <!-- Sixième section -->
-    <section id="section6">
+    <section id="note">
       <div class="container py-5">
-        <h5>DAS SAGEN UNSERE KUNDEN</h5>
-        <h1 class="display-1 m-0">4,6</h1>
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <span class="text-warning">
-            <img src="src/vectors/yellowStar.svg">
-            <img src="src/vectors/yellowStar.svg">
-            <img src="src/vectors/yellowStar.svg">
-            <img src="src/vectors/yellowStar.svg">
-            <img src="src/vectors/yellowStar.svg">
-          </span>
+        <div class="note">
+          <h2 class="m-h2-grey">DAS SAGEN UNSERE KUNDEN</h2>
+          <h4 class="display-1 m-0">4,6</h4>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-warning">
+              <img src="src/vectors/yellowStar.svg">
+              <img src="src/vectors/yellowStar.svg">
+              <img src="src/vectors/yellowStar.svg">
+              <img src="src/vectors/yellowStar.svg">
+              <img src="src/vectors/yellowStar.svg">
+            </span>
+          </div>
+          <p class="text-muted title-google">durchschnittlich bei Google</p>
         </div>
-        <p class="text-muted">durchschnittlich bei Google</p>
-        <div class="card mx-auto" style="max-width: 400px;">
-          <div class="card-body">
-            <h5 class="card-title">Firstname Lastname</h5>
-            <p class="card-text">
-              ich bin in jeder Hinsicht sehr zufrieden mit den Schritten, die ich beim Kauf meines Fahrzeugs unternommen
-              habe.
-              Es ist genau so, wie ich es mir gewünscht habe und die verschiedenen Personen, die mich bedient haben,
-              waren
-              sehr kompetent und haben mir zugehört.
-              Ich empfehle
-            </p>
-            <div class="text-warning mb-2">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
+        <div class="d-flex align-items-center gap-3">
+          <img src="src/vectors/chevron.svg" alt="" class="chevron-left">
+          <div class="card mx-auto" style="max-width: 400px;">
+            <div class="card-body shadow p-3 bg-body rounded">
+              <h5 class="card-title">Firstname Lastname</h5>
+              <p class="card-text">
+                ich bin in jeder Hinsicht sehr zufrieden mit den Schritten, die ich beim Kauf meines Fahrzeugs
+                unternommen
+                habe.
+                Es ist genau so, wie ich es mir gewünscht habe und die verschiedenen Personen, die mich bedient haben,
+                waren
+                sehr kompetent und haben mir zugehört.
+                Ich empfehle
+              </p>
+              <div class="text-warning mb-2">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+              </div>
             </div>
           </div>
+          <img src="src/vectors/chevron.svg" alt="" class="chevron-right">
         </div>
       </div>
     </section>
@@ -424,7 +434,7 @@
       <h2 class="m-h2-grey">FOTOGALERIE</h2>
       <div class="container">
         <div class="row gx-3">
-          <div class="col-12 col-md-4 mb-3">
+          <div class="col-12 col-md-4 mb-3 square-image">
             <img src="src/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" class="img-fluid"
               alt="ISUZU-D-MAX für Geschäftskunden">
           </div>
@@ -471,6 +481,25 @@
           </ul>
         </div>
       </div>
+    </div>
+    <hr>
+    <div class="footer-info">
+      <div class="footer-line">
+        <a href="#">Impressum</a> |
+        <a href="#">Datenschutz</a>
+      </div>
+      <div class="social-icons">
+        <!-- La classe .social-icon est appliquée au lien, pas à l'image -->
+        <a href="#" class="social-icon"><img src="src/vectors/youtube-icon.svg" alt="YouTube"></a>
+        <a href="#" class="social-icon"><img src="src/vectors/instagram-icon.svg" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="src/vectors/facebook-icon.svg" alt="Facebook"></a>
+      </div>
+      <div class="powered-by">
+        <img src="src/vectors/poweredByBoteca.svg" alt="Powered by Boteca">
+      </div>
+    </div>
+
+
     </div>
   </footer>
 

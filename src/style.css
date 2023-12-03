@@ -17,6 +17,20 @@ body nav a img {
   height: 2.3rem;
   padding-right: 0.6rem;
 }
+.nav-a {
+  color: #333333;
+  font-size: 1rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+}
+nav h5 {
+  color: #333333;
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+
 #startseite video {
   height: 100vh;
   width: 100%;
@@ -27,7 +41,8 @@ body nav a img {
 
 #uberuns,
 #dmax-modele,
-#contact {
+#contact,
+#gallery h2 {
   padding: 4rem 2.5rem 1rem 2.5rem;
 }
 
@@ -38,7 +53,9 @@ body nav a img {
 #dmax button {
   margin: 1rem 2.5rem 1rem 2.5rem;
 }
-
+.btn-carousel {
+  background: transparent;
+}
 #contact h4 {
   font-weight: 700;
   font-size: 1.1rem;
@@ -49,7 +66,8 @@ body nav a img {
 .nseries h2 {
   padding: 0rem 0 1rem 0;
 }
-.navbar > div {
+.navbar > div,
+.note {
   padding: 0 1.8rem 0 1.8rem;
 }
 
@@ -64,7 +82,21 @@ body nav a img {
   size: 1rem;
   transform: rotate(180deg);
 }
+.square-image {
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* Ratio 1:1 */
+  position: relative;
+}
 
+.square-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .logo-subtitle {
   color: #ffffff;
   font-size: 0.8rem;
@@ -119,17 +151,74 @@ body nav a img {
 .footer {
   padding: 1rem 1rem 1rem 1rem;
 }
+.footer-info {
+  text-align: center;
+}
 .footer a {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.2rem;
-  padding: 1rem 0 1rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   color: #333333;
-  text-transform: uppercase;
 }
 .footer img {
   height: 1.8rem;
+}
+
+.footer-line {
+  margin-bottom: 20px;
+}
+.footer-line a {
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+.social-icons {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.social-icon {
+  background-color: #6d727b;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.2rem;
+  overflow: hidden;
+}
+.card-title {
+  color: #6d727b;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.card-body {
+  text-align: center;
+}
+.social-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.powered-by {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #888;
+}
+.powered-by svg {
+  height: 3rem;
+  vertical-align: middle;
 }
 
 #startseite > img {
@@ -249,6 +338,18 @@ body nav a img {
   opacity: 80%;
   padding: 1rem 1rem 1rem 1rem;
 }
+.btn-main a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.btn-main-menu img {
+  height: 1.5rem;
+}
+.btn-main-menu {
+  padding: 0.2rem 3rem;
+  text-align: center;
+}
 
 .dmax-modele-titre {
   font-family: "Kanit", sans-serif;
@@ -314,6 +415,16 @@ body nav a img {
   font-weight: 500;
   font-size: 1rem;
   color: #6d727b;
+}
+.title-google {
+  font-weight: 700;
+  color: #333333;
+}
+#note h4 {
+  font-size: 4.8rem;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  color: #e3000b;
 }
 
 @media screen and (min-width: 768px) {
