@@ -21,60 +21,80 @@
 <body>
   <!-- Section d'en-tête -->
   <header>
-    <!-- Liens de navigation -->
     <nav class="navbar fixed-top">
-      <div class="container-fluid">
+      <div class=" d-flex flex-column flex-md-row w-100">
         <div class="d-flex justify-content-between w-100">
           <a class="navbar-brand" href="#startseite">
-            <img src="src/vectors/Logo-Isuzu-white.svg" />
+            <img src="src/vectors/Logo-Isuzu-white.svg" alt="Isuzu Logo" />
           </a>
-          <button class="navbar-toggler d-block" type="button" data-bs-toggle="offcanvas"
+          <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <img src="src/vectors/menu.svg" />
+            <img src="src/vectors/menu.svg" alt="Menu" />
           </button>
         </div>
-        <h2 class="logo-subtitle">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <h2 class="logo-subtitle d-block ">AUTOHAUS MUSTERMANN, MUSTERSTARF</h2>
+      </div>
 
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              AUTOHAUS MUSTERMANN, MUSTERSTARF
-            </h5>
-            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-a">
-              <li class="nav-item">
-                <a class="nav-link" href="#startseite">STARTSEITE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#uberuns">ÜBER UNS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#dmax">D-MAX</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nseries">N-SERIES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kontak">KONTAK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">FOTOGALERIE</a>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-main-menu btn-main ">
-
-              <a href="#" class="col d-flex align-items-center">
-                <img src="src/vectors/steering-2-fill.svg" /> Probefahrt</a>
-            </button>
-          </div>
+      <!-- Offcanvas pour les écrans mobiles -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AUTOHAUS MUSTERMANN, MUSTERSTARF</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-a">
+            <li class="nav-item">
+              <a class="nav-link" href="#startseite">STARTSEITE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#uberuns">ÜBER UNS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dmax">D-MAX</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nseries">N-SERIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">KONTAK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">FOTOGALERIE</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
   </header>
 
-  <nav class="fixed-bottom row">
+  <!-- Liens de navigation pour les écrans de bureau -->
+  <nav id="nav-fixed" class="position-fixed z-3 ">
+    <div>
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-a d-none d-lg-flex nav-desktop ">
+        <li class="nav-item">
+          <a class="nav-link" href="#startseite">STARTSEITE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#uberuns">ÜBER UNS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#dmax">D-MAX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nseries">N-SERIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontak">KONTAK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">FOTOGALERIE</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="fixed-bottom row nav-bottom">
     <a href="#" class="col probefahrt">
       <img src="src/vectors/steering-2-fill.svg" /> Probefahrt</a>
     <a href="#" class="col kontakt">
@@ -88,7 +108,7 @@
     <section id="startseite" class="">
       <div id="video-overlay"
         class="position-absolute d-flex flex-column align-items-center justify-content-center h-100 w-100 text-light gap-2">
-        <h1 class="m-h1-white">WILLKOMMEN BEI</h1>
+        <h1 class="m-h1-white ">WILLKOMMEN BEI</h1>
         <h2 class="m-h2-white">AUTOHAUS MUSTERMANN</h2>
       </div>
       <img src="src/vectors/icon-scroll-normal.svg" class="position-absolute" />
@@ -100,7 +120,7 @@
     <!-- Deuxième section -->
     <section id="uberuns" class="container">
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 grp-uber">
           <h3 class="m-b-headline">ÜBER UNS</h3>
           <h2 class="m-h2-grey">
             AUTOHAUS WIENS,<br />
@@ -157,79 +177,117 @@
             iriustrud, min il, tio lor. Eummolortion dolortie feuguer
             lummolessi mod feuismo odo tem vullutat.
           </p>
-          <button type="button" class="btn btn-main">Main CTA title</button>
-          <button type="button" class="btn btn-scd">
-            Secondary CTA Title
-          </button>
+          <div class="d-flex gap-4">
+
+            <button type="button" class="btn btn-main">Main CTA title</button>
+            <button type="button" class="btn btn-scd">
+              Secondary CTA Title
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Troisième section -->
     <section id="dmax">
-      <div class="">
-        <div class="row">
-          <div class="col-12 col-md-7">
-            <div class="image-container-uber">
-              <img src="src/pictures/bloc-sep-1.svg" class="svg-overlay" />
-              <div class="text-overlay">
-                <h2 class="text-dmax">ÜBER DEN D-MAX</h2>
-              </div>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <div class="image-container-uber position-relative">
+            <img src="src/pictures/bloc-sep-1.svg" class="svg-overlay" />
+            <div class="text-overlay">
+              <h2 class="text-dmax">ÜBER DEN D-MAX</h2>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="d-flex justify-content-between align-items-center group-function">
-              <img src="src/vectors/chevron.svg" class="chevron-left">
-              <h2 class="m-h2-grey-custom">Technik & Funktion</h2>
-              <img src="src/vectors/chevron.svg" class="chevron-right">
-            </div>
-            <p>
-              Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
-              feugait. Enis feugiat minisi adiam quis esse nonsequi diat.
-              Verciduisi vullam volute ver dolenismodit dolorer conse vullam
-              tio a duis. Eum magnis re.Amconsequis iriuscing, se, to iurem
-              eum facillametum dit del odo. El atueraestrud vullutat,
-              uipsuscidunt lortin rat commod commod luptat iusci
-            </p>
-            <p>
-              Commy re del eui elesequisim nim amet lummy quip. Dionsenim,
-              sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
-              eummolortion consequi. Dolortin sustionsenim amconsequis
-              iriustrud, min il, tio lor. Eummolortion dolortie feuguer
-              lummolessi mod feuismo ddo tem vullutat.
-            </p>
-            <div class="d-flex p-2">
-              <button type="button" class="d-block btn btn-main w-100">
-                Main CTA title
-              </button>
-            </div>
+        </div>
+        <div class="col-12 col-md-4 position-relative">
+          <img src="src/vectors/chevron.svg" class="chevron-left ">
+          <img src="src/vectors/chevron.svg" class="chevron-right ">
+          <div class="d-flex justify-content-between align-items-center group-function">
+            <h2 class="m-h2-grey-custom">Technik & Funktion</h2>
+
+          </div>
+          <p>
+            Ex, eugiamet eui esto mod, in lan ese nummodolor augiametuer
+            feugait. Enis feugiat minisi adiam quis esse nonsequi diat.
+            Verciduisi vullam volute ver dolenismodit dolorer conse vullam
+            tio a duis. Eum magnis re.Amconsequis iriuscing, se, to iurem
+            eum facillametum dit del odo. El atueraestrud vullutat,
+            uipsuscidunt lortin rat commod commod luptat iusci
+          </p>
+          <p>
+            Commy re del eui elesequisim nim amet lummy quip. Dionsenim,
+            sustionsenim amconul am lum amconul lorem digniamet. Feuismo eum
+            eummolortion consequi. Dolortin sustionsenim amconsequis
+            iriustrud, min il, tio lor. Eummolortion dolortie feuguer
+            lummolessi mod feuismo ddo tem vullutat.
+          </p>
+          <div class="d-flex">
+            <button type="button" class="d-block btn btn-main ">
+              Main CTA title
+            </button>
           </div>
         </div>
       </div>
     </section>
+
     <section id="dmax-modele">
       <h2 class="m-h2-grey-dmax">D-MAX MODELLE</h2>
       <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="d-flex gap-2">
+        <div id="carousel" class="d-flex gap-2 ">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
             class="rounded ratio ratio-1x1 btn-carousel" aria-label="Single cab">
-            <img src="src/pictures/sc.png" class="object-fit-contain p-1" alt="single cab" />
+            <h3 class="d-none">Single Cab</h3>
+            <picture class="d-flex align-items-center">
+              <source srcset="src/pictures/sc2x.png" media="(min-width: 768px)" />
+              <img src="src/pictures/sc.png" class="object-fit-contain p-1 img-fluid" alt="single cab" />
+            </picture>
           </button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Space cab"
+          <button type="button " data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Space cab"
             aria-current="true" class="active rounded ratio ratio-1x1 btn-carousel">
-            <img src="src/pictures/ec.png" class="object-fit-contain p-1" alt="single cab" />
+            <h3 class="d-none">Double Cab</h3>
+            <picture class="d-flex align-items-center">
+              <source srcset="src/pictures/ec2x.png" media="(min-width: 768px)" />
+              <img src="src/pictures/ec.png" class="object-fit-contain p-1 img-fluid " alt="single cab" />
+            </picture>
           </button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Double cab"
             class="rounded ratio ratio-1x1 btn-carousel">
-            <img src="src/pictures/dc.png" class="object-fit-contain p-1" alt="single cab" />
+            <h3 class="d-none">Extended Cab</h3>
+            <picture class="d-flex align-items-center">
+              <source srcset="src/pictures/dc2x.png" media="(min-width: 768px)" />
+              <img src="src/pictures/dc.png" class="object-fit-contain p-1 img-fluid" alt="single cab" />
+            </picture>
           </button>
         </div>
 
-        <div class="carousel-inner">
+        <div class="carousel-inner ">
+          <div class="carousel-item ">
+            <h2 class="dmax-modele-titre d-md-none ">Single cab</h2>
+
+            <img src="src/pictures/sc@3x.png" class="d-block w-100 d-md-none " alt="single cab" />
+
+            <p>
+              Dolutatueros lobor zzriusto non. Doloreetuer quamcommy minit,
+              dolorer wiscin dolorem ullaorperit. Erciduisit ispum odigniamet
+              lam eummolestin faciduisim do tin uismodolor, an feuisis enim.
+              Sustionsenim velis em minisl it facipit lortin. Conulputat mod
+              etum si. Tin, atuerat, wisl min quis dolenismodit nisci
+              adionsequat wissis. <br />
+              Adionsequat ut consequi dolortie nummodolor lenim lortin
+              nonsequi. Erci quis non. Aliquipsusci erciduisit feummod non. It
+              feu facinim dion ptatueros dion, dolortie tis dolortio rit
+              eugiamet. Iriustrud lorer tumsandionse magna.
+            </p>
+
+            <div class="d-block d-md-inline-flex">
+              <button type="button" class="  btn btn-main w-100 px-5">
+                Main CTA title
+              </button>
+            </div>
+          </div>
           <div class="carousel-item active">
-            <h2 class="dmax-modele-titre">Single cab</h2>
-
-            <img src="src/pictures/sc@3x.png" class="d-block w-100" alt="single cab" />
+            <h2 class="dmax-modele-titre d-md-none ">Space cab</h2>
+            <img src="src/pictures/ec@3x.png" class="d-block w-100 d-md-none " alt="space cab" />
 
             <p>
               Dolutatueros lobor zzriusto non. Doloreetuer quamcommy minit,
@@ -244,15 +302,15 @@
               eugiamet. Iriustrud lorer tumsandionse magna.
             </p>
 
-            <div>
-              <button type="button" class="d-block btn btn-main w-100">
+            <div class="d-block d-md-inline-flex">
+              <button type="button" class=" btn btn-main w-100 px-5">
                 Main CTA title
               </button>
             </div>
           </div>
-          <div class="carousel-item">
-            <h2 class="dmax-modele-titre">Space cab</h2>
-            <img src="src/pictures/ec@3x.png" class="d-block w-100" alt="space cab" />
+          <div class="carousel-item ">
+            <h2 class="dmax-modele-titre d-md-none ">Double cab</h2>
+            <img src="src/pictures/dc@3x.png" class="d-block w-100 d-md-none " alt="double cab" />
 
             <p>
               Dolutatueros lobor zzriusto non. Doloreetuer quamcommy minit,
@@ -267,31 +325,8 @@
               eugiamet. Iriustrud lorer tumsandionse magna.
             </p>
 
-            <div>
-              <button type="button" class="d-block btn btn-main w-100">
-                Main CTA title
-              </button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <h2 class="dmax-modele-titre">Double cab</h2>
-            <img src="src/pictures/dc@3x.png" class="d-block w-100" alt="double cab" />
-
-            <p>
-              Dolutatueros lobor zzriusto non. Doloreetuer quamcommy minit,
-              dolorer wiscin dolorem ullaorperit. Erciduisit ispum odigniamet
-              lam eummolestin faciduisim do tin uismodolor, an feuisis enim.
-              Sustionsenim velis em minisl it facipit lortin. Conulputat mod
-              etum si. Tin, atuerat, wisl min quis dolenismodit nisci
-              adionsequat wissis. <br />
-              Adionsequat ut consequi dolortie nummodolor lenim lortin
-              nonsequi. Erci quis non. Aliquipsusci erciduisit feummod non. It
-              feu facinim dion ptatueros dion, dolortie tis dolortio rit
-              eugiamet. Iriustrud lorer tumsandionse magna.
-            </p>
-
-            <div>
-              <button type="button" class="d-block btn btn-main w-100">
+            <div class="d-block d-md-inline-flex">
+              <button type="button" class=" btn btn-main w-100 px-5">
                 Main CTA title
               </button>
             </div>
@@ -303,13 +338,13 @@
     <!-- Quatrième section -->
     <section id="nseries">
       <div class="row">
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 order-md-2">
           <div class="image-container">
-            <img src="src/pictures/bloc-sep-1.svg" class="svg-overlay" />
+            <img src="src/pictures/bloc-sep-1.svg" class="svg-overlay" id="svg-overlay" />
           </div>
         </div>
-        <div class="nseries">
-          <div class="col-12 col-md-4">
+        <div class="nseries col-12 col-md-4 offset-md-1">
+          <div class="">
             <h3 class="m-b-headline">FÜR MACHER GEMACHT</h3>
             <h2 class="m-h2-grey">DIE ISUZU N-SERIE</h2>
           </div>
@@ -318,22 +353,23 @@
             Aber vor allem: ein Partner, der dir die Arbeit erleichtert. Die
             N-Serie leistet all das – jeden Tag, rund um den Globus.
           </p>
-          <div class="d-flex flex-column mb-2 row-gap-3">
-            <button type="button" class="btn p-2 btn-main">
+          <div class="d-flex flex-column  row-gap-3 w-100">
+            <button type="button" class=" w-75 btn p-2 btn-main">
               N-Serie entdecken
             </button>
-            <button type="button" class="btn p-2 btn-scd">
+            <button type="button" class=" w-75 btn p-2 btn-scd">
               Katalog downloaden
             </button>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- Cinquième section -->
     <section id="contact">
       <h2 class="m-h2-grey"> KONTAKTINFORMAATIONEN</h2>
       <div class="d-lg-flex">
-        <div class="text-contact">
+        <div class="text-contact col-12 col-md-3 offset-md-1">
           <h4>KONTACT</h4>
           <p>
             Langbaurghstraße 12,<br> 53842 Troisdorf
@@ -344,68 +380,92 @@
             E-Mail : info(at)autohaus-weidenbrueck.de
           </p>
         </div>
-        <div class="row">
-          <h4>ANFAHRT</h4>
-          <!-- <p>
+        <div class="col-12 col-md-3">
+          <div class="row ">
+            <h4>ANFAHRT</h4>
+            <!-- <p>
             Wir benötigen Deine Einwilligung, um die Karte von Google Maps mit
             den Händlerstandorten anzuzeigen. Ich bin damit einverstanden, dass
             mir die Google Maps-Karte angezeigt wird. Damit können
             personenbezogene Daten an Google übertragen werden. Mehr dazu in
             unserer Datenschutzerklärung.
           </p> -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.448395078646!2d7.1098161999999965!3d50.8228579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bedfba30c2f9ab%3A0x89ade042e4969310!2sLangbaurghstra%C3%9Fe%2012%2C%2053842%20Troisdorf%2C%20Allemagne!5e0!3m2!1sfr!2sbe!4v1701436149436!5m2!1sfr!2sbe"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <button type="button" class="btn btn-main mt-4">
-            Google Maps immer anzeigen
-          </button>
+            <div class="ratio ratio-1x1"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.448395078646!2d7.1098161999999965!3d50.8228579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bedfba30c2f9ab%3A0x89ade042e4969310!2sLangbaurghstra%C3%9Fe%2012%2C%2053842%20Troisdorf%2C%20Allemagne!5e0!3m2!1sfr!2sbe!4v1701436149436!5m2!1sfr!2sbe"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <button type="button" class="btn btn-main mt-4  col">
+              Google Maps immer anzeigen
+            </button>
+          </div>
         </div>
-        <div>
+        <div class="col-12 col-md-4 offset-md-1">
           <h4>ÖFFNUNGSZEITEN</h4>
-          <div>
-            <h5>Verkauf</h5>
-            <h6>Montag - Freidag</h6>
-            <p>07:30 Uhr - 12:00 Uhr</p>
-            <p>13:20 Uhr - 18:00 Uhr</p>
-            <h6>Samstag</h6>
-            <p>07:30 Uhr - 12:00 Uhr</p>
+          <h5>Verkauf</h5>
+          <div class="row">
+            <div class="col-12 col-md-6 ">
+              <h6>Montag - Freidag</h6>
+            </div>
+            <div class="col-12  col-md-5 ">
+              <p>07:30 Uhr - 12:00 Uhr</p>
+              <p>13:20 Uhr - 18:00 Uhr</p>
+            </div>
+            <div class="col-12 col-md-6 ">
+              <h6>Samstag</h6>
+            </div>
+            <div class="col-12  col-md-5 ">
+              <p>07:30 Uhr - 12:00 Uhr</p>
+            </div>
           </div>
-          <div>
-            <h5>Service</h5>
-            <h6>Montag - Freidag</h6>
-            <p>07:30 Uhr - 12:00 Uhr</p>
-            <p>13:20 Uhr - 18:00 Uhr</p>
-            <h6>Samstag</h6>
-            <p>07:30 Uhr - 12:00 Uhr</p>
+          <h5>Service</h5>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h6>Montag - Freidag</h6>
+            </div>
+            <div class="col-12  col-md-5">
+              <p>07:30 Uhr - 12:00 Uhr</p>
+              <p>13:20 Uhr - 18:00 Uhr</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <h6>Samstag</h6>
+            </div>
+            <div class="col-12  col-md-5">
+              <p>07:30 Uhr - 12:00 Uhr</p>
+            </div>
+            <div class="col-12 col-md-10">
+              <p>Außerhalb der gesetzlichen Ladenöffnungszeiten keine Beratung, kein Verkauf, keine
+                Probefahrtvereinbarung.
+              </p>
+            </div>
           </div>
-          <p>Außerhalb der gesetzlichen Ladenöffnungszeiten keine Beratung, kein Verkauf, keine Probefahrtvereinbarung.
-          </p>
         </div>
       </div>
     </section>
 
     <!-- Sixième section -->
     <section id="note">
-      <div class="container py-5">
-        <div class="note">
-          <h2 class="m-h2-grey">DAS SAGEN UNSERE KUNDEN</h2>
-          <h4 class="display-1 m-0">4,6</h4>
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="text-warning">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-              <img src="src/vectors/yellowStar.svg">
-            </span>
+      <div class="container py-5 row offset-md-1">
+        <h2 class="m-h2-grey">DAS SAGEN UNSERE KUNDEN</h2>
+        <div class="note col-12 col-md-6  ">
+          <div class="d-md-flex">
+            <h4 class="display-1 m-0">4,6</h4>
+            <div class="d-flex justify-content-between align-items-center mb-3 p-4">
+              <span class="text-warning">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <img src="src/vectors/yellowStar.svg">
+                <p class="text-muted title-google">durchschnittlich bei Google</p>
+              </span>
+            </div>
           </div>
-          <p class="text-muted title-google">durchschnittlich bei Google</p>
         </div>
-        <div class="d-flex align-items-center gap-3">
+        <div id='review' class="d-flex align-items-center gap-3 position-relative col-12 col-md-5">
           <img src="src/vectors/chevron.svg" alt="" class="chevron-left">
-          <div class="card mx-auto" style="max-width: 400px;">
-            <div class="card-body shadow p-3 bg-body rounded">
+          <div class="card mx-auto border border-0 shadow-lg p-4 bg-body rounded-5">
+            <div class="card-body  ">
               <h5 class="card-title">Firstname Lastname</h5>
               <p class="card-text">
                 ich bin in jeder Hinsicht sehr zufrieden mit den Schritten, die ich beim Kauf meines Fahrzeugs
@@ -432,34 +492,55 @@
     <!-- Septième section -->
     <section id="gallery">
       <h2 class="m-h2-grey">FOTOGALERIE</h2>
-      <div class="container">
-        <div class="row gx-3">
-          <div class="col-12 col-md-4 mb-3 square-image">
-            <img src="src/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" class="img-fluid"
-              alt="ISUZU-D-MAX für Geschäftskunden">
-          </div>
-          <div class="col-12 col-md-4 mb-3 d-none d-md-block">
-            <img src="src/pictures/isuzu-d-max-Ladefläche-Handwerker-Kipper.webp" class="img-fluid"
-              alt="ISUZU-D-MAX Ladefläche für Handwerker">
-          </div>
-          <div class="col-12 col-md-4 mb-3 d-none d-md-block">
-            <img src="src/pictures/ISUZU-D-MAX-blau-im-wald-nachhaltige-effizienz.webp" class="img-fluid"
-              alt="ISUZU-D-MAX blau im Wald">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row gx-3">
+                <!-- Chaque image prend un quart de la largeur de la ligne (col-md-3) -->
+                <div class="col-6 col-md-3 ">
+                  <img src="src/pictures/ISUZU-D-MAX-Geschaeftskunden-Flottenkunden.webp" class="img-fluid "
+                    alt="Image 1">
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <img src="src/pictures/ISUZU-D-MAX-Individualisierung-Umbauten.webp" class="img-fluid " alt="Image 2">
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <img src="src/pictures/ISUZU-D-MAX-blau-im-wald-nachhaltige-effizienz.webp" class="img-fluid"
+                    alt="Image 3">
+                </div>
+                <div class="col-6 col-md-3 d-none d-md-block">
+                  <img src="src/pictures/04-home-bild_text-N-Serie 3,5t Koffer City Image.webp" class="img-fluid"
+                    alt="Image 4">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
+
+
+
   </main>
   <!-- Pied de page -->
   <footer class="footer mt-auto py-3">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <a class="navbar-brand" href="#startseite">
+      <div class="row ">
+        <div class="col-12  position-relative">
+          <a class="navbar-brand " href="#startseite">
             <img src="src/vectors/Logo-Isuzu.svg" alt="Logo Isuzu" />
         </div>
-        <div class="col-12 col-md-6">
-          <ul class="nav flex-column">
+        <div class="col-12 ">
+          <ul class="nav flex-column d-flex flex-md-row justify-content-center ">
             <li class="nav-item">
               <a class="nav-link active " aria-current="page" href="#startseite">STARTSEITE</a>
             </li>
