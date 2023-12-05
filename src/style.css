@@ -40,21 +40,29 @@ nav h5 {
 }
 
 #uberuns,
-#dmax-modele,
 #contact,
 #gallery h2 {
-  padding: 4rem 2.5rem 1rem 2.5rem;
+  height: auto;
+}
+#contact,
+#note,
+#gallery > h2 {
+  padding: 2rem 2rem;
 }
 
 #dmax p {
-  padding: 1rem 2.5rem 1rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   font-weight: 600;
 }
 #dmax button {
-  margin: 1rem 2.5rem 1rem 2.5rem;
+  margin: 1rem 2.5rem;
 }
 .btn-carousel {
   background: transparent;
+  border-color: #333333;
+}
+.btn-carousel:hover {
+  border-color: #e3000b;
 }
 #contact h4 {
   font-weight: 700;
@@ -68,7 +76,7 @@ nav h5 {
 }
 .navbar > div,
 .note {
-  padding: 0 1.8rem 0 1.8rem;
+  padding: 0 1.8rem;
 }
 
 .navbar-brand > img {
@@ -154,7 +162,7 @@ nav h5 {
   height: 2rem;
 }
 .nseries {
-  padding: 1rem 4rem 1rem 4rem;
+  padding: 2rem 2rem;
 }
 .footer {
   padding: 1rem 1rem 1rem 1rem;
@@ -253,7 +261,7 @@ nav h5 {
   background-color: #333333;
   text-decoration: none;
   text-align: center;
-  padding: 1.4rem 0 1.4rem 0;
+  padding: 1.4rem 0;
   font-family: "Kanit", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
@@ -354,8 +362,10 @@ nav h5 {
   height: 1.5rem;
 }
 .btn-main-menu {
-  padding: 0.2rem 3rem;
   text-align: center;
+}
+#dmax-modele {
+  padding: 2rem 2rem;
 }
 
 .dmax-modele-titre {
@@ -451,7 +461,9 @@ nav h5 {
     left: 0;
     transform: rotate(180deg);
   }
-
+  #uberuns {
+    height: 75vh;
+  }
   .nav-bottom,
   .navbar-toggler,
   .offcanvas-header,
@@ -488,15 +500,12 @@ nav h5 {
   .m-h2-white {
     font-size: 2.5rem;
   }
-  #uberuns {
-    padding: 10rem 5rem 10.5rem 5rem;
-  }
 
-  #dmax-modele {
+  /* #dmax-modele {
     padding: 1rem 10rem 5rem 10rem;
-  }
+  } */
   #dmax-modele img {
-    height: 60%;
+    height: 50%;
   }
   #dmax-modele button {
     border: none;
@@ -512,6 +521,13 @@ nav h5 {
     opacity: 100%;
     transition: all 300ms;
     transition-timing-function: ease-in;
+  }
+  #dmax-modele h3 {
+    font-size: 1.2rem;
+    font-family: "Kanit", sans-serif;
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
   }
   #carousel > .active > picture {
     opacity: 100%;
@@ -559,14 +575,14 @@ nav h5 {
     font-size: 2.2rem;
   }
   .chevron-right {
-    top: 50%;
-    right: -2.2rem;
-    height: 2.5rem;
+    top: 40%;
+    right: -3rem;
+    height: 3rem;
   }
   .chevron-left {
-    top: 50%;
-    left: -2.5rem;
-    height: 2.5rem;
+    top: 40%;
+    left: -3rem;
+    height: 3rem;
   }
   .note {
     align-self: center;
@@ -577,5 +593,63 @@ nav h5 {
   #nav-fixed {
     top: 35%;
     right: 0;
+  }
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .gallery-img {
+    height: 75%;
+    width: 25%;
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  .gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .gallery-container {
+    position: relative;
+  }
+
+  .chevron-left-gallery,
+  .chevron-right-gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 2.5rem;
+  }
+
+  .chevron-left-gallery {
+    left: 1rem;
+    transform: rotate(180deg);
+  }
+
+  .chevron-right-gallery {
+    right: 1rem;
+  }
+  footer h2 {
+    font-size: 1rem;
+    color: #333333;
   }
 }
